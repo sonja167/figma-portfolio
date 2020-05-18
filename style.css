@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #222222;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  color: #838383;
+}
+
+hr {
+  border: 1px solid #ffffff;
+  opacity: 0.2;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+  background: none;
+}
+
+.blueborderbutton {
+  background: #8671fc;
+  width: 160px;
+  height: 60px;
+  border-radius: 30px;
+  color: white;
+}
+
+.bluefontbutton {
+  color: #8671fc;
+}
+
+.whitefontbutton {
+  color: white;
+}
+
+.fas {
+  padding-left: 10px;
+}
+
+.whitefont {
+  color: white;
+}
+
+.whitefont p {
+  color: white;
+}
+
+.redfont {
+  color: #f05d7b;
+}
+
+.grid-container {
+  display: grid;
+  width: 1440px;
+  margin: auto;
+  background-color: #f9fafc;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 720px 720px 250px auto 300px 560px;
+  grid-template-areas:
+    "nav"
+    "intro"
+    "about"
+    "skills"
+    "cards"
+    "clients"
+    "footer";
+}
+
+/* Nav */
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+  justify-content: space-between;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #838383;
+}
+
+.nav .active {
+  color: #8671fc;
+}
+
+/* Intro */
+
+.intro {
+  grid-area: intro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+}
+
+.introtext {
+  display: flex;
+  flex-direction: column;
+  max-width: 470px;
+}
+
+.intro .blueborderbutton {
+  margin-right: 50px;
+}
+
+/* About */
+
+.about {
+  grid-area: about;
+  background-image: url(../img/ovals.png);
+  display: flex;
+}
+
+.abouttext {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.abouttext section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+  max-width: 800px;
+}
+
+/* Skills */
+
+.skills {
+  grid-area: skills;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+.cards {
+  grid-area: cards;
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.pinkcard {
+  width: 370px;
+  height: 335px;
+  background-image: url(../img/ovals.png);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.whitecard {
+  width: 370px;
+  height: 335px;
+  border: 1px solid lightgrey;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Clients */
+
+.clients {
+  grid-area: clients;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+
+.footer {
+  grid-area: footer;
+  background-image: url(../img/ovals.png);
+  text-align: center;
+}
+
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 240px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.signature {
+  padding-left: 200px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+}
