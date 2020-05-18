@@ -159,7 +159,7 @@ button {
 
 .about {
   grid-area: about;
-  background-image: url(../img/ovals.png);
+  background-image: url(img/ovals.png);
   display: flex;
 }
 
@@ -200,7 +200,7 @@ button {
 .pinkcard {
   width: 370px;
   height: 335px;
-  background-image: url(../img/ovals.png);
+  background-image: url(img/ovals.png);
   padding: 50px;
   display: flex;
   flex-direction: column;
