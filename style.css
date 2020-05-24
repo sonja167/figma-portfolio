@@ -232,7 +232,7 @@ button {
 
 .footer {
   grid-area: footer;
-  background-image: url(../img/ovals.png);
+  background-image: url(img/ovals.png);
   text-align: center;
 }
 
